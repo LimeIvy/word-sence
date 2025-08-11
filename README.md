@@ -37,11 +37,8 @@ uvicorn api.main:app --reload
 AUTH_SECRET=
 AUTH_GOOGLE_ID=
 AUTH_GOOGLE_SECRET=
-DATABASE_URL=your_supabase_database_url
+DATABASE_URL=
 ```
-
-### API
-`.env`ファイルを作成し、必要に応じて環境変数を設定
 
 ## 開発
 
