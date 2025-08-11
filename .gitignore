@@ -1,0 +1,48 @@
+# 大きなモデルファイル
+*.model
+*.xml.bz2
+
+# 分析用のPythonファイル
+analyze/
+analyze-jp.py
+
+# テキストデータ
+text/
+
+# 名詞抽出モデル
+nouns_model/
+
+# Python仮想環境
+wordData/
+.python-version
+
+# その他
+useCommand.md
+
+# フロントエンド関連（frontendフォルダ内で管理）
+frontend/node_modules/
+frontend/.next/
+frontend/.env*
+
+# API関連（APIフォルダ内で管理）
+API/__pycache__/
+API/.venv/
+API/.env*
+API/.ssh/
+
+# システムファイル
+.DS_Store
+Thumbs.db
+
+# IDE設定
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.temp
