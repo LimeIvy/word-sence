@@ -23,6 +23,7 @@ useCommand.md
 frontend/node_modules/
 frontend/.next/
 frontend/.env*
+frontend/.open-next/
 
 # API関連（APIフォルダ内で管理）
 API/__pycache__/
