@@ -1,18 +1,17 @@
-# JP Card Game
+# ワードセンス
 
-日本語のカードゲームアプリケーションです。
+日本語を用いたカードゲームアプリケーションです。
 
 ## プロジェクト構成
 
 ### Frontend (`/frontend`)
 - Next.js 14 + TypeScript + TailwindCSS
-- Supabaseを使用したデータベース連携
+- Neonを使用したデータベース連携
 - カードゲームのUI/UX
 
 ### API (`/API`)
 - FastAPIを使用したバックエンドAPI
-- カードゲームのロジック処理
-- データベース操作
+- 文字合成の処理
 
 ## セットアップ
 
@@ -35,6 +34,9 @@ uvicorn api.main:app --reload
 ### Frontend
 `.env.local`ファイルを作成し、以下を設定：
 ```
+AUTH_SECRET=
+AUTH_GOOGLE_ID=
+AUTH_GOOGLE_SECRET=
 DATABASE_URL=your_supabase_database_url
 ```
 
@@ -44,10 +46,6 @@ DATABASE_URL=your_supabase_database_url
 ## 開発
 
 このプロジェクトは以下の技術スタックを使用しています：
-- **Frontend**: Next.js 14, TypeScript, TailwindCSS, Supabase
+- **Frontend**: Next.js 14, TypeScript, TailwindCSS, Shadcn/ui,NextAuth,Drizzle,Neon
 - **Backend**: FastAPI, Python
-- **Database**: PostgreSQL (Supabase)
-
-## ライセンス
-
-MIT License
+- **Database**: PostgreSQL (Neon)
